@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  PulseTrack Structured eIFU Sample
+  ----------------------------------
+  This is a simplified, illustrative structured-labeling XML file created
+  as a regulatory affairs training exercise. It demonstrates the concept
+  of machine-readable, multi-language Instructions for Use (eIFU) content,
+  consistent with electronic labeling practices used in EU markets.
+
+  This is NOT a real regulatory submission and does not conform to any
+  single official schema (e.g., no specific national eIFU XSD is implied).
+  It is meant to illustrate the *concept* of structured labeling content
+  for a regulatory affairs portfolio.
+-->
+<InstructionsForUse device="PulseTrack" version="1.0" documentId="IFU-PT-001">
+
+  <DeviceIdentification>
+    <DeviceName>PulseTrack Wireless Fingertip Pulse Oximeter</DeviceName>
+    <Manufacturer>Vitalis Health, Inc. (fictional)</Manufacturer>
+    <UDI-DI>00000000000000</UDI-DI>
+    <ModelNumber>PT-100</ModelNumber>
+  </DeviceIdentification>
+
+  <IndicationsForUse lang="en">
+    For monitoring SpO2 and pulse rate in adult patients (18 years and older)
+    with a physician-diagnosed respiratory condition placing them at risk of
+    hypoxemia, in home and ambulatory non-clinical settings, as an adjunct to
+    clinical judgment and physician-directed care.
+  </IndicationsForUse>
+
+  <IndicationsForUse lang="es">
+    Para el control de la SpO2 y la frecuencia del pulso en pacientes adultos
+    (18 años o más) con una afección respiratoria diagnosticada por un médico
+    que conlleve riesgo de hipoxemia, en entornos domésticos y ambulatorios no
+    clínicos, como complemento del criterio clínico y la atención dirigida por
+    un médico.
+  </IndicationsForUse>
+
+  <Warnings lang="en">
+    <Warning id="W1" riskControlRef="RMF-002">
+      Do not use as the sole basis for diagnosis or treatment decisions.
+    </Warning>
+    <Warning id="W2" riskControlRef="RMF-002">
+      Do not use during transport, surgery, or in critical care environments.
+    </Warning>
+    <Warning id="W3" riskControlRef="RMF-001">
+      Seek immediate medical attention if you experience symptoms of low
+      oxygen, regardless of the device reading.
+    </Warning>
+    <Warning id="W4" riskControlRef="RMF-001">
+      Nail polish, artificial nails, or poor peripheral circulation may
+      cause inaccurate readings.
+    </Warning>
+  </Warnings>
+
+  <Precautions lang="en">
+    <Precaution id="P1">Ensure the sensor is fully seated on a clean, dry finger.</Precaution>
+    <Precaution id="P2">Keep your phone within 10 meters (33 feet) of the device to maintain Bluetooth connection.</Precaution>
+    <Precaution id="P3">Charge fully before first use.</Precaution>
+    <Precaution id="P4">Rotate finger placement periodically during extended monitoring sessions.</Precaution>
+  </Precautions>
+
+  <StepByStepInstructions lang="en">
+    <Step order="1">Charge PulseTrack fully via the included USB-C cable.</Step>
+    <Step order="2">Download and open the PulseTrack companion app; pair via Bluetooth.</Step>
+    <Step order="3">Clip the sensor onto a clean, dry fingertip.</Step>
+    <Step order="4">Wait 10 seconds for the reading to stabilize.</Step>
+    <Step order="5">If a "low signal quality" indicator appears, reposition the sensor.</Step>
+    <Step order="6">Configure the low-SpO2 alert threshold as directed by your healthcare provider.</Step>
+  </StepByStepInstructions>
+
+  <Maintenance lang="en">
+    Wipe the sensor with a soft cloth dampened with 70% isopropyl alcohol
+    between uses. Do not immerse in water. Do not autoclave.
+  </Maintenance>
+
+  <RevisionHistory>
+    <Revision version="1.0" date="2026-01-15" summary="Initial structured eIFU sample created." />
+  </RevisionHistory>
+
+</InstructionsForUse>
